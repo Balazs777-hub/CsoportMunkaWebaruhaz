@@ -1,36 +1,22 @@
-import { termekLista } from "./TermekAdatok.js";
+import { termekAdatok } from "./TermekAdatok.js";
+import { Termek } from "./Termek.js";
 
 export class TermekLista{
-    #carCardsContainer;
-    #termekLista= []
+    #szuloElem;
+    #termekLista= [];
     constructor(){
-        this.#termekLista = termekLista
-        this.#carCardsContainer = document.getElementById('carCards');
+        this.#termekLista = termekAdatok;
+        this.#szuloElem = document.getElementById('carCards');
         this.megjelenit();
     }
 
     megjelenit(){
     // Iteráljuk a termékeket és létrehozzuk a kártyákat
-    this.#termekLista.forEach((termek) => {
-    const card = document.createElement('div');
-    card.classList.add('col-md-4', 'mb-4');
-  
-    card.innerHTML = `
-        <div class="card">
-            <img src="${termek.kep}" class="card-img-top" alt="${termek.nev}">
-            <div class="card-body">
-            <h5 class="card-title">${termek.nev}</h5>
-            <p class="card-text">${termek.leiras}</p>
-            <p class="card-text"><strong>Ár: ${termek.Ar} Ft</strong></p>
-            <button class="btn btn-primary">Kosárba rakom</button>
-            </div>
-        </div>
-        `;
-    
-        this.#carCardsContainer.appendChild(card);
-    });
+        for (let i = 0; i < termekAdatok.length; i++) {
+            new Termek(termekAdatok[i], this.#szuloElem, i);            
+        }
     }
 
+  
+  
 }
-
-

@@ -1,4 +1,4 @@
-export const termekLista = [
+export const termekAdatok = [
     {
       kep: "Kepek/tesla.png",
       nev: "Tesla Model S",
@@ -60,6 +60,5 @@ export const termekLista = [
       Ar: 7000000,
     },
   ];
-  
-  console.log(termekLista);
+
   
