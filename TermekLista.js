@@ -19,7 +19,7 @@ export class TermekLista{
             <div class="card-body">
             <h5 class="card-title">${termek.nev}</h5>
             <p class="card-text">${termek.leiras}</p>
-            <p class="card-text"><strong>Ár: ${termek.Ar}</strong></p>
+            <p class="card-text"><strong>Ár: ${termek.Ar} Ft</strong></p>
             <button class="btn btn-primary">Kosárba rakom</button>
             </div>
         </div>
