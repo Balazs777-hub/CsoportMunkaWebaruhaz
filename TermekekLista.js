@@ -18,7 +18,7 @@ const termekLista = [
       Ar: "38,000 USD"
     },
     {
-      kep: "Kepek/merci.jpg",
+      kep: "Kepek/merci.jfiff",
       nev: "Mercedes-Benz C-Class",
       leiras: "Kiváló minőségű, kényelmes és biztonságos autó a prémium kategóriában.",
       Ar: "55,000 USD"
@@ -30,7 +30,7 @@ const termekLista = [
       Ar: "130,000 USD"
     },
     {
-      kep: "Kepek/cadillac.jpg",
+      kep: "Kepek/cadillac.png",
       nev: "Cadillac XT4",
       leiras: "Amerikai izomautó, amely kiemelkedő teljesítményt és stílust kínál.",
       Ar: "50,000 USD"
@@ -40,7 +40,31 @@ const termekLista = [
       nev: "BMW X3m50i",
       leiras: "Teljesen elektromos autó, amely környezetbarát és gazdaságos.",
       Ar: "35,000 USD"
-    }
+    },
+    {
+      kep: "Kepek/bentley2.png",
+      nev: "Bentley Continental",
+      leiras: "A teljesen elektromos luxusautó, amely forradalmasította a jövőt.",
+      Ar: "170,000 USD"
+    },
+    {
+      kep: "Kepek/bentley.png",
+      nev: "Bentley Bentayga",
+      leiras: "A prémium kategóriás SUV, sportos vezetési élménnyel.",
+      Ar: "145,000 USD"
+    },
+    {
+      kep: "Kepek/audi.png",
+      nev: "Audi A3",
+      leiras: "Elegáns és technológiai szempontból fejlett autó, amely a luxust és kényelmet ötvözi.",
+      Ar: "38,000 USD"
+    },
+    {
+      kep: "Kepek/merci.jpg",
+      nev: "Mercedes-Benz C-Class",
+      leiras: "Kiváló minőségű, kényelmes és biztonságos autó a prémium kategóriában.",
+      Ar: "55,000 USD"
+    },
   ];
   
   console.log(termekLista);
