@@ -2,6 +2,7 @@ export default class Vasarlok {
 
     constructor() {
         this.megjelenit();
+        this.fejlec();
     }
 
     megjelenit(){
@@ -36,4 +37,19 @@ export default class Vasarlok {
             </button>
         </div>`
     }
-}
+
+    fejlec() {
+        const header = document.querySelector(".bg-dark");
+        const sticky = header.offsetTop; // A fejléc kezdeti pozíciója
+
+        // Figyeljük a görgetési eseményt
+        window.onscroll = function() {
+        if (window.pageYOffset > sticky) {
+            header.style.position = "fixed"; // Ha a görgetési pozíció elérte a fejlécet, fixáljuk
+            header.style.top = "0"; // A fejléc maradjon a képernyő tetején
+        } else {
+            header.style.position = "relative"; // Ha visszagörgetünk a tetejére, állítsuk vissza az eredeti helyére
+            header.style.top = "0"; // Eltávolítjuk a top értéket
+        }
+    }
+}}

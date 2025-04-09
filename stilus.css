@@ -9,6 +9,13 @@ body {
 
 header {
   border-bottom: 2px solid #ddd;
+  position: relative; /* Kezdetben normál pozícióban */
+  top: 0;            /* A fejléc a képernyő tetejére kerüljön */
+  left: 0;           /* Bal oldalra igazítjuk */
+  width: 100%;       /* A fejléc szélessége 100% */
+  z-index: 1000;     /* Biztosítja, hogy a fejléc a többi tartalom fölött legyen */
+  padding: 1rem 0;
+  transition: top 0.3s; /* Animáció, amikor elmozdítjuk a fejlécet */
 }
 
 .card img {
