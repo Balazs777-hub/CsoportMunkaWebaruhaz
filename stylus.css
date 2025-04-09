@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  border-bottom: 2px solid #ddd;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}

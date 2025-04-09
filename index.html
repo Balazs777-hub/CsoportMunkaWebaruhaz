@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autó Webáruház</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylus.css" rel="stylesheet">
+  <script type="module" src="java.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Autó Webáruház</h1>
+      <div class="cart">
+        <button class="btn btn-warning" id="cartButton">
+          Kosár <span id="cartCount">0</span> db
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Autó Kártyák -->
+  <div class="container mt-4">
+    <div class="row" id="carCards">
+      <!-- Kártyák itt fognak megjelenni -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS és Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Saját JS -->
+  <script src="script.js"></script>
+</body>
+</html>
