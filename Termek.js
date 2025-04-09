@@ -8,12 +8,15 @@ export class Termek{
         this.#szuloElem = szuloElem;
         this.#index = index;
         this.megjelenit();
-        console.log("asd");
+     
+        this.#kosarGOMB =document.querySelector(".termek:last-child .btn")
+       
+        this.kosarbaEvent();
     }
 
     megjelenit(){
         const card = document.createElement('div');
-        card.classList.add('col-md-4', 'mb-4');
+        card.classList.add('col-md-4', 'mb-4','termek');
         card.innerHTML = `
         <div class="card">
             <img src="${this.#adatok.kep}" class="card-img-top" alt="${this.#adatok.nev}">
@@ -27,5 +30,14 @@ export class Termek{
         `;
 
         this.#szuloElem.appendChild(card);
+    }
+
+
+    kosarbaEvent(){
+        console.log( this.#kosarGOMB);
+        this.#kosarGOMB.addEventListener("click", ()=>{
+            console.log(this.#index);
+            window.dispatchEvent(new CustomEvent("kosarba", {detail: this.#adatok}));
+        })
     }
 }

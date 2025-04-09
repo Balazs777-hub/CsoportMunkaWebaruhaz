@@ -1,22 +1,32 @@
 import { KosarElem } from "./KosarElem.js";
 
-KosarElem
+
 export class Kosar {
     #KosarLista = [];
     #szoloELEM;
-    constructor(KosarLista, szoloELEM) {
-      this.#KosarLista = KosarLista;
-      this.#szoloELEM = szoloELEM;
+    constructor() {
+      this.#KosarLista = [];
+      this.#szoloELEM = document.querySelector(".kosar");
       this.megjelenit();
+      this.hozaAd();
 
     }
     megjelenit() {
+        console.log(this.#szoloELEM);
+        
         this.#szoloELEM.innerHTML = "";
         for (let index = 0; index < this.#KosarLista.length; index++) {
           const element = this.#KosarLista[index];
-          new Kosar(element, this.#szoloELEM, index);
+          new KosarElem(element, this.#szoloELEM, index);
         }
     }
     torol(){}
-    hozaAd(){}
+    hozaAd(){
+        window.addEventListener("kosarba", ()=>{
+            console.log(event.detail);
+            this.#KosarLista.push(event.detail);
+            console.log(this.#KosarLista)
+            this.megjelenit();
+        });
+    }
 }
