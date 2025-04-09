@@ -1,4 +1,4 @@
-const termekLista = [
+export const termekLista = [
     {
       kep: "Kepek/tesla.png",
       nev: "Tesla Model S",
