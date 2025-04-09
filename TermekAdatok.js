@@ -18,7 +18,7 @@ export const termekLista = [
       Ar: 10000000,
     },
     {
-      kep: "Kepek/merci.jfiff",
+      kep: "Kepek/merci.jfif",
       nev: "Mercedes-Benz C-Class",
       leiras: "Kiváló minőségű, kényelmes és biztonságos autó a prémium kategóriában.",
       Ar: 50000000,
@@ -48,7 +48,7 @@ export const termekLista = [
       Ar: 90000000,
     },
     {
-      kep: "Kepek/bentley.png",
+      kep: "Kepek/bentley.jpg",
       nev: "Bentley Bentayga",
       leiras: "A prémium kategóriás SUV, sportos vezetési élménnyel.",
       Ar: 100000000,
@@ -58,12 +58,6 @@ export const termekLista = [
       nev: "Audi A3",
       leiras: "Elegáns és technológiai szempontból fejlett autó, amely a luxust és kényelmet ötvözi.",
       Ar: 7000000,
-    },
-    {
-      kep: "Kepek/merci.jpg",
-      nev: "Mercedes-Benz C-Class",
-      leiras: "Kiváló minőségű, kényelmes és biztonságos autó a prémium kategóriában.",
-      Ar: 33000000,
     },
   ];
   
