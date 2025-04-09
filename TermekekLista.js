@@ -30,8 +30,7 @@ const termekLista = [
       Ar: "130,000 USD"
     },
     {
-      kep: "Kepek/cadillac
-      .jpg",
+      kep: "Kepek/cadillac.jpg",
       nev: "Cadillac XT4",
       leiras: "Amerikai izomautó, amely kiemelkedő teljesítményt és stílust kínál.",
       Ar: "50,000 USD"
@@ -41,54 +40,6 @@ const termekLista = [
       nev: "BMW X3m50i",
       leiras: "Teljesen elektromos autó, amely környezetbarát és gazdaságos.",
       Ar: "35,000 USD"
-    },
-    {
-      kep: "https://example.com/car8.jpg",
-      nev: "Honda Accord",
-      leiras: "Stílusos és megbízható középkategóriás autó, amely kényelmet és gazdaságosságot kínál.",
-      Ar: "28,000 USD"
-    },
-    {
-      kep: "https://example.com/car9.jpg",
-      nev: "Porsche 911",
-      leiras: "A sportautók királya, amely tökéletes vezetési élményt biztosít.",
-      Ar: "100,000 USD"
-    },
-    {
-      kep: "https://example.com/car10.jpg",
-      nev: "Nissan Leaf",
-      leiras: "Egy kompakt elektromos autó, amely környezetbarát és megfizethető.",
-      Ar: "32,000 USD"
-    },
-    {
-      kep: "https://example.com/car6.jpg",
-      nev: "Ford Mustang",
-      leiras: "Amerikai izomautó, amely kiemelkedő teljesítményt és stílust kínál.",
-      Ar: "50,000 USD"
-    },
-    {
-      kep: "https://example.com/car7.jpg",
-      nev: "Chevrolet Bolt EV",
-      leiras: "Teljesen elektromos autó, amely környezetbarát és gazdaságos.",
-      Ar: "35,000 USD"
-    },
-    {
-      kep: "https://example.com/car8.jpg",
-      nev: "Honda Accord",
-      leiras: "Stílusos és megbízható középkategóriás autó, amely kényelmet és gazdaságosságot kínál.",
-      Ar: "28,000 USD"
-    },
-    {
-      kep: "https://example.com/car9.jpg",
-      nev: "Porsche 911",
-      leiras: "A sportautók királya, amely tökéletes vezetési élményt biztosít.",
-      Ar: "100,000 USD"
-    },
-    {
-      kep: "https://example.com/car10.jpg",
-      nev: "Nissan Leaf",
-      leiras: "Egy kompakt elektromos autó, amely környezetbarát és megfizethető.",
-      Ar: "32,000 USD"
     }
   ];
   
