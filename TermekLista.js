@@ -2,14 +2,16 @@ import { termekLista } from "./TermekAdatok.js";
 
 export class TermekLista{
     #carCardsContainer;
+    #termekLista= []
     constructor(){
+        this.#termekLista = termekLista
         this.#carCardsContainer = document.getElementById('carCards');
         this.megjelenit();
     }
 
     megjelenit(){
     // Iteráljuk a termékeket és létrehozzuk a kártyákat
-    termekLista.forEach((termek) => {
+    this.#termekLista.forEach((termek) => {
     const card = document.createElement('div');
     card.classList.add('col-md-4', 'mb-4');
   
