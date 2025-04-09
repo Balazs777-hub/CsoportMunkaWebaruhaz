@@ -26,7 +26,7 @@ export const termekLista = [
     {
       kep: "Kepek/chevrolet.jpg",
       nev: "Chevrolet Corvete",
-      leiras: "Elegáns még is robosztusos megjelenésü izom autó, melyben a vezetés egy külön élmény.",
+      leiras: "Elegáns még is robosztusos megjelenésü izom autó, egyedi vezetési élménnyel.",
       Ar: 70000000,
     },
     {
