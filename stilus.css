@@ -9,6 +9,13 @@ body {
 
 header {
   border-bottom: 2px solid #ddd;
+  position: relative; /* Kezdetben normál pozícióban */
+  top: 0;            /* A fejléc a képernyő tetejére kerüljön */
+  left: 0;           /* Bal oldalra igazítjuk */
+  width: 100%;       /* A fejléc szélessége 100% */
+  z-index: 1000;     /* Biztosítja, hogy a fejléc a többi tartalom fölött legyen */
+  padding: 1rem 0;
+  transition: top 0.3s; /* Animáció, amikor elmozdítjuk a fejlécet */
 }
 
 .card img {
@@ -21,5 +28,50 @@ footer {
   background-color: orange;
   text-align: center;
   margin: auto;
-  
+
+}
+
+/* A carousel konténer szélességét és középre igazítását állítjuk */
+#carouselExampleIndicators {
+  max-width: 100%; /* A carousel szélessége */
+  margin: 0 auto;  /* Középre igazítás */
+}
+
+/* A képek magasságának beállítása */
+.carousel-item img {
+  width: 100%;     /* A kép szélessége */
+  height: 500px;   /* A kép magassága */
+  object-fit: cover; /* A kép kitöltse a rendelkezésre álló teret, miközben megőrzi az arányait */
+}
+
+/* A navigációs gombok testreszabása */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* A navigációs ikonok színe */
+  border-radius: 50%; /* Kerek ikonok */
+}
+
+/* Az indikátorok (pontok) testreszabása */
+.carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5); /* Az indikátorok alap színe */
+}
+
+.carousel-indicators .active {
+  background-color: rgba(255, 255, 255, 0.8); /* Az aktív indikátor színe */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* A gombok színe */
+  border-radius: 50%;
+  width: 30px; /* Kisebb gombok */
+  height: 30px; /* Kisebb gombok */
+}
+
+.cart img {
+  width: 30px;
+}
+
+.boldogV {
+  border-bottom: 2px solid #ddd;
 }
