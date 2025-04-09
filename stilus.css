@@ -17,6 +17,15 @@ header {
   padding: 1rem 0;
   transition: top 0.3s; /* Animáció, amikor elmozdítjuk a fejlécet */
 }
+header img {
+  width: 70px;
+}
+
+header h1 {
+  margin: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(245, 193, 97);
+}
 
 .card img {
   height: 200px;
