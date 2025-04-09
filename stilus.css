@@ -75,3 +75,38 @@ footer {
 .boldogV {
   border-bottom: 2px solid #ddd;
 }
+.card {
+  display: flex;
+  flex-direction: column;  /* A tartalom függőleges elrendezése */
+  height: 100%;            /* Teljes magasság a szülő elemhez képest */
+  min-height: 400px;       /* A kártyák legalább 400px magasak lesznek */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Könnyű árnyék hozzáadása */
+}
+
+.card img {
+  object-fit: cover;      /* A képek kitöltik a rendelkezésre álló teret */
+  width: 100%;             /* A képek teljes szélességét kitöltik */
+  height: 200px;           /* A képek magassága fix, hogy egységesek legyenek */
+}
+
+.card-body {
+  flex-grow: 1;            /* A testtartalom növekvő teret foglal el */
+  display: flex;
+  flex-direction: column;  /* A szöveg és a gomb egymás alatt helyezkedik el */
+  justify-content: space-between; /* A tartalom tetején és alján is legyen hely */
+}
+
+.card-title {
+  font-size: 1.25rem;     /* A cím egy kicsit nagyobb legyen */
+  font-weight: bold;      /* A cím vastagabb legyen */
+}
+
+.card-text {
+  font-size: 1rem;        /* Az ár és leírás normál betűmérettel */
+  color: #333;            /* Sötétebb szín a szövegnek */
+}
+
+.kosarBtn {
+  margin-top: auto;        /* A gombot a kártya aljára helyezi */
+  align-self: center;      /* Középre igazítja a gombot */
+}
