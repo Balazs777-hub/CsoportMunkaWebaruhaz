@@ -1,7 +1,7 @@
 import { KosarElem } from "./KosarElem.js";
 
 KosarElem
-export default class Kosar {
+export class Kosar {
     #KosarLista = [];
     #szoloELEM;
     constructor(KosarLista, szoloELEM) {
