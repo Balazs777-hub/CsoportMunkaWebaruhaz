@@ -1,13 +1,10 @@
-html, body{
-  height: 100%;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-image: url(Kepek/hatter.jpg);
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
+  background-position: fixed;
 }
 
 header {
